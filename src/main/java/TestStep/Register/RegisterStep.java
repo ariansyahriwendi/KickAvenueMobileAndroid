@@ -50,7 +50,12 @@ public class RegisterStep extends BaseStep {
     }
 
     @Then("I register successfully")
+<<<<<<< HEAD
     public void iRegisterSuccessfully() {
+=======
+    public void iRegisterSuccessfully() throws InterruptedException {
+        Thread.sleep(3000);
+>>>>>>> dc37aee (Initial commit)
 
     }
 
@@ -58,13 +63,19 @@ public class RegisterStep extends BaseStep {
     public void iClickRegisterGoogleButton() throws InterruptedException {
         Thread.sleep(2000);
         objRegister.registerGoogleButton.click();
+<<<<<<< HEAD
         Thread.sleep(2000);
+=======
+>>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click register facebook button")
     public void iClickRegisterFacebookButton() throws InterruptedException {
         objRegister.registerFacebookButton.click();
+<<<<<<< HEAD
         Thread.sleep(2000);
+=======
+>>>>>>> dc37aee (Initial commit)
     }
 
 }

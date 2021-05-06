@@ -1,7 +1,10 @@
 package TestStep.BaseStep;
 
 import BaseClass.TestRunner;
+<<<<<<< HEAD
 import Object.Calculator.Calculator;
+=======
+>>>>>>> dc37aee (Initial commit)
 import Object.ForgotPassword.ForgotPassword;
 import Object.Login.Login;
 import Object.Market.Market;
@@ -17,7 +20,10 @@ public class BaseStep    {
 
     public static AndroidDriver<AndroidElement> driver ;
 
+<<<<<<< HEAD
     public static Calculator objCalculator = new Calculator(TestRunner.driver);
+=======
+>>>>>>> dc37aee (Initial commit)
     public static Login objLogin = new Login(TestRunner.driver);
     public static ForgotPassword objForgotPassword = new ForgotPassword(TestRunner.driver);
     public static Register objRegister = new Register(TestRunner.driver);
@@ -35,7 +41,10 @@ public class BaseStep    {
         System.out.println(endPoint);
         TouchAction touchAction = new TouchAction(TestRunner.driver);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dc37aee (Initial commit)
         for(int i=0;i<times;i++) {
             touchAction.press(width,startPoint).waitAction(Duration.ofSeconds(2)).moveTo(width,endPoint).release().perform();
         }

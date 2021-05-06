@@ -54,14 +54,25 @@ public class ProfileStep extends BaseStep {
     }
 
     @And("I click pending top up")
+<<<<<<< HEAD
     public void IClickPendingTopUp() throws InterruptedException {
         objProfile.pendingTopUp.click();
         Thread.sleep(2000);
+=======
+    public void IClickPendingTopUp() {
+        objProfile.pendingTopUp.click();
+
+>>>>>>> dc37aee (Initial commit)
 
     }
 
     @Then("I use kick credit successfully")
+<<<<<<< HEAD
     public void IUseKickCreditSuccessfully() {
+=======
+    public void IUseKickCreditSuccessfully() throws InterruptedException {
+        Thread.sleep(3000);
+>>>>>>> dc37aee (Initial commit)
 
     }
 
@@ -96,7 +107,11 @@ public class ProfileStep extends BaseStep {
 
     @Then("I use top up successfully")
     public void IUseTopUpSuccessfully() throws InterruptedException {
+<<<<<<< HEAD
         Thread.sleep(2000);
+=======
+        Thread.sleep(3000);
+>>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click cash out")
@@ -135,7 +150,12 @@ public class ProfileStep extends BaseStep {
     }
 
     @Then("I use cash out successfully")
+<<<<<<< HEAD
     public void IUseCashOutSuccessfully() {
+=======
+    public void IUseCashOutSuccessfully() throws InterruptedException {
+        Thread.sleep(3000);
+>>>>>>> dc37aee (Initial commit)
 
     }
 
@@ -151,7 +171,11 @@ public class ProfileStep extends BaseStep {
 
     @Then("I use seller credit successfully")
     public void IUseSellerCreditSuccessfully() throws InterruptedException {
+<<<<<<< HEAD
         Thread.sleep(2000);
+=======
+        Thread.sleep(3000);
+>>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click seller credit info")
@@ -213,7 +237,11 @@ public class ProfileStep extends BaseStep {
 
     @Then("I use invite a friend successfully")
     public void IUseInviteAFriendSuccessfully() throws InterruptedException {
+<<<<<<< HEAD
         Thread.sleep(2000);
+=======
+        Thread.sleep(3000);
+>>>>>>> dc37aee (Initial commit)
     }
 
     @When("I want to use buying")
@@ -252,7 +280,11 @@ public class ProfileStep extends BaseStep {
 
     @Then("I use buying successfully")
     public void IUseBuyingSuccessfully() throws InterruptedException {
+<<<<<<< HEAD
         Thread.sleep(2000);
+=======
+        Thread.sleep(3000);
+>>>>>>> dc37aee (Initial commit)
     }
 
     @And("I want to use selling")
@@ -302,7 +334,11 @@ public class ProfileStep extends BaseStep {
 
     @Then("I use my voucher successfully")
     public void IUseMyVoucherSuccessfully() throws InterruptedException {
+<<<<<<< HEAD
         Thread.sleep(2000);
+=======
+        Thread.sleep(3000);
+>>>>>>> dc37aee (Initial commit)
     }
 
     @When("I want to use wishlist")
@@ -341,7 +377,11 @@ public class ProfileStep extends BaseStep {
 
     @Then("I use wishlist successfully")
     public void IUseWishlistSuccessfullt() throws InterruptedException {
+<<<<<<< HEAD
         Thread.sleep(2000);
+=======
+        Thread.sleep(3000);
+>>>>>>> dc37aee (Initial commit)
     }
 
     @When("I want to use help center")
@@ -385,7 +425,12 @@ public class ProfileStep extends BaseStep {
     }
 
     @Then("I use help center successfully")
+<<<<<<< HEAD
     public void IUseHelpCenterSuccessfully() {
+=======
+    public void IUseHelpCenterSuccessfully() throws InterruptedException {
+        Thread.sleep(3000);
+>>>>>>> dc37aee (Initial commit)
 
     }
 
