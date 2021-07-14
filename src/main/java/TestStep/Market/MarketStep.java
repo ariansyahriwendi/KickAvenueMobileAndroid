@@ -14,11 +14,7 @@ public class MarketStep extends BaseStep {
 
     @And("I click market")
     public void IClickMarket() throws InterruptedException {
-        <<<<<<< HEAD
-        Thread.sleep(7000);
-=======
         Thread.sleep(9000);
->>>>>>> dc37aee (Initial commit)
         objMarket.marketTab.click();
     }
 
@@ -27,11 +23,7 @@ public class MarketStep extends BaseStep {
         objMarket.marketStreetwear.click();
         objMarket.marketSneakers.click();
         Thread.sleep(2000);
-<<<<<<< HEAD
-        scrollTouch(3);
-=======
         scrollTouch(2);
->>>>>>> dc37aee (Initial commit)
         Thread.sleep(2000);
 
     }
@@ -62,68 +54,43 @@ public class MarketStep extends BaseStep {
 
     @And("I input {string}")
     public void IInput(String search) throws InterruptedException {
-<<<<<<< HEAD
-        objMarket.searchMarketInput.clear();
-        objMarket.searchMarketInput.sendKeys(search);
-        Thread.sleep(5000);
-=======
         Thread.sleep(1000);
         objMarket.searchMarketInput.clear();
         objMarket.searchMarketInput.sendKeys(search);
-        Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
+        Thread.sleep(4000);
     }
 
     @And("I click result found sneakers")
     public void IClickResultFoundSneakers() throws InterruptedException {
         objMarket.resultFoundSneakers.click();
-        Thread.sleep(3000);
-<<<<<<< HEAD
-        scrollTouch(3);
-        Thread.sleep(3000);
-=======
+        Thread.sleep(5000);
         scrollTouch(2);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click result found streetwear")
     public void IClickResultFoundStreetwear() throws InterruptedException {
         objMarket.resultFoundStreetwear.click();
         Thread.sleep(5000);
-<<<<<<< HEAD
-        scrollTouch(3);
-        Thread.sleep(5000);
-=======
         scrollTouch(2);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click result found luxury")
     public void IClickResultFoundLuxury() throws InterruptedException {
         objMarket.resultFoundLuxury.click();
         Thread.sleep(5000);
-<<<<<<< HEAD
-        scrollTouch(3);
-        Thread.sleep(5000);
-=======
         scrollTouch(2);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click result found lifestyle")
     public void IClickResultFoundLifestyle() throws InterruptedException {
         objMarket.resultFoundLifestyle.click();
         Thread.sleep(5000);
-<<<<<<< HEAD
-        scrollTouch(3);
-        Thread.sleep(5000);
-=======
         scrollTouch(2);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click back to search")
     public void IClickBackToSearch() throws InterruptedException {
+        Thread.sleep(1000);
         objMarket.backToSearch.click();
         Thread.sleep(1000);
     }
@@ -131,11 +98,7 @@ public class MarketStep extends BaseStep {
 
     @Then("I search product successfully")
     public void ISearchProductSuccessfully() throws InterruptedException {
-<<<<<<< HEAD
-        Thread.sleep(5000);
-=======
         Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click filter sneakers")
@@ -261,22 +224,12 @@ public class MarketStep extends BaseStep {
     public void IClickApplyFilter() throws InterruptedException {
         objMarket.applyFilter.click();
         Thread.sleep(3000);
-<<<<<<< HEAD
-        scrollTouch(3);
-        Thread.sleep(3000);
-=======
         scrollTouch(2);
->>>>>>> dc37aee (Initial commit)
-
     }
 
     @Then("I use filter search successfully")
     public void IUseFilterSearchSuccessfully() throws InterruptedException {
-<<<<<<< HEAD
-        Thread.sleep(5000);
-=======
         Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
     }
 
     @When("I want view product market streetwear")
@@ -286,17 +239,10 @@ public class MarketStep extends BaseStep {
 
     @And("I click streetwear")
     public void IClickStreetwear() throws InterruptedException {
-<<<<<<< HEAD
-        objMarket.marketStreetwear.click();
-        Thread.sleep(2000);
-        scrollTouch(3);
-        Thread.sleep(2000);
-=======
         Thread.sleep(2000);
         objMarket.marketStreetwear.click();
         Thread.sleep(2000);
         scrollTouch(2);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click brand 88rising")
@@ -316,17 +262,10 @@ public class MarketStep extends BaseStep {
 
     @And("I click luxury")
     public void IClickLuxury() throws InterruptedException {
-<<<<<<< HEAD
-        objMarket.marketLuxury.click();
-        Thread.sleep(2000);
-        scrollTouch(3);
-        Thread.sleep(2000);
-=======
         Thread.sleep(2000);
         objMarket.marketLuxury.click();
         Thread.sleep(2000);
         scrollTouch(2);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click condition brand new")
@@ -378,12 +317,7 @@ public class MarketStep extends BaseStep {
     public void IClickLifestyle() throws InterruptedException {
         objMarket.marketLifestyle.click();
         Thread.sleep(2000);
-<<<<<<< HEAD
-        scrollTouch(3);
-        Thread.sleep(2000);
-=======
         scrollTouch(2);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click category collectibles")

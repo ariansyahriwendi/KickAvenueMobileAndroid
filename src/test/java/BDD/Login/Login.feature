@@ -8,7 +8,7 @@ Feature: Login
     And I click profile
     And I click login button
     And I input email "ariansyahriwendi@gmail.com"
-    And I input password "Passwordkickavenue"
+    And I input password "kickavenue1745"
     And I click login submit button
     Then I login successfully
 
@@ -27,7 +27,7 @@ Feature: Login
       And I click profile
       And I click login button
       And I input email "ariansyahriwendi@gmail.com"
-      And I input password "Passwordkickavenue"
+      And I input password "kickavenue1745"
       And I click login submit button
       Then I login successfully
       And I click profile
@@ -41,6 +41,9 @@ Feature: Login
       And I click profile
       And I click login button
       And I click continue with google button
+      And I select google account
+      And I click profile
+      And I click logout button
       Then I login successfully
 
 
@@ -51,4 +54,7 @@ Feature: Login
       And I click profile
       And I click login button
       And I click continue with facebook button
+      And I select facebook account
+      And I click profile
+      And I click logout button
       Then I login successfully

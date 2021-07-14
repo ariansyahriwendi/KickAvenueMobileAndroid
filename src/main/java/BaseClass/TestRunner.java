@@ -1,10 +1,7 @@
 package BaseClass;
 
 import io.cucumber.testng.CucumberOptions;
-<<<<<<< HEAD
-=======
 import org.testng.annotations.AfterMethod;
->>>>>>> dc37aee (Initial commit)
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -17,11 +14,8 @@ import org.testng.annotations.BeforeSuite;
                 "pretty",
                 "json:target/cucumber.json",
         },
-<<<<<<< HEAD
-        tags = {"@MarketFilterLifestyle"}
-=======
-        tags = {"@MarketSearchStreetwear"}
->>>>>>> dc37aee (Initial commit)
+
+        tags = {"@LoginSuccess"}
 )
 
 public class TestRunner extends BaseSetUp {
@@ -31,11 +25,6 @@ public class TestRunner extends BaseSetUp {
                 setUp();
         }
 
-<<<<<<< HEAD
-        @AfterSuite
-        public static void teardown()  {
-                driver.closeApp();
-=======
         @AfterMethod()
         public void teardownn()  {
                 driver.closeApp();
@@ -46,7 +35,6 @@ public class TestRunner extends BaseSetUp {
         public static void teardown()  {
                 driver.closeApp();
                 driver.quit();
->>>>>>> dc37aee (Initial commit)
         }
 
 }

@@ -36,6 +36,7 @@ public class ProfileStep extends BaseStep {
 
     @And("I click kick credit")
     public void IClickKickCredit() throws InterruptedException {
+        Thread.sleep(2000);
         objProfile.kickCreditButton.click();
         Thread.sleep(2000);
 
@@ -54,25 +55,15 @@ public class ProfileStep extends BaseStep {
     }
 
     @And("I click pending top up")
-<<<<<<< HEAD
     public void IClickPendingTopUp() throws InterruptedException {
         objProfile.pendingTopUp.click();
         Thread.sleep(2000);
-=======
-    public void IClickPendingTopUp() {
-        objProfile.pendingTopUp.click();
-
->>>>>>> dc37aee (Initial commit)
 
     }
 
     @Then("I use kick credit successfully")
-<<<<<<< HEAD
-    public void IUseKickCreditSuccessfully() {
-=======
     public void IUseKickCreditSuccessfully() throws InterruptedException {
         Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
 
     }
 
@@ -101,17 +92,16 @@ public class ProfileStep extends BaseStep {
     }
 
     @And("I click continue your payment")
-    public void IClickContinueYourPayment() {
+    public void IClickContinueYourPayment() throws InterruptedException {
+        Thread.sleep(2000);
         objProfile.continueYourPayment.click();
+        Thread.sleep(2000);
+
     }
 
     @Then("I use top up successfully")
     public void IUseTopUpSuccessfully() throws InterruptedException {
-<<<<<<< HEAD
         Thread.sleep(2000);
-=======
-        Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click cash out")
@@ -150,13 +140,8 @@ public class ProfileStep extends BaseStep {
     }
 
     @Then("I use cash out successfully")
-<<<<<<< HEAD
-    public void IUseCashOutSuccessfully() {
-=======
     public void IUseCashOutSuccessfully() throws InterruptedException {
         Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
-
     }
 
     @And("I want to use seller credit")
@@ -171,11 +156,7 @@ public class ProfileStep extends BaseStep {
 
     @Then("I use seller credit successfully")
     public void IUseSellerCreditSuccessfully() throws InterruptedException {
-<<<<<<< HEAD
         Thread.sleep(2000);
-=======
-        Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click seller credit info")
@@ -237,11 +218,7 @@ public class ProfileStep extends BaseStep {
 
     @Then("I use invite a friend successfully")
     public void IUseInviteAFriendSuccessfully() throws InterruptedException {
-<<<<<<< HEAD
-        Thread.sleep(2000);
-=======
         Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
     }
 
     @When("I want to use buying")
@@ -280,11 +257,7 @@ public class ProfileStep extends BaseStep {
 
     @Then("I use buying successfully")
     public void IUseBuyingSuccessfully() throws InterruptedException {
-<<<<<<< HEAD
         Thread.sleep(2000);
-=======
-        Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I want to use selling")
@@ -293,8 +266,9 @@ public class ProfileStep extends BaseStep {
     }
 
     @And("I click selling")
-    public void IClickSelling() {
-
+    public void IClickSelling() throws InterruptedException {
+        objProfile.sellingButton.click();
+        Thread.sleep(2000);
     }
 
     @And("I use selling successfully")
@@ -334,11 +308,7 @@ public class ProfileStep extends BaseStep {
 
     @Then("I use my voucher successfully")
     public void IUseMyVoucherSuccessfully() throws InterruptedException {
-<<<<<<< HEAD
-        Thread.sleep(2000);
-=======
         Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
     }
 
     @When("I want to use wishlist")
@@ -375,14 +345,34 @@ public class ProfileStep extends BaseStep {
         objProfile.sneakersWishlist.click();
     }
 
+    @And("I click wishlist product")
+    public void IClickWishlistProduct() throws InterruptedException {
+        objProfile.wishlistProductButton.click();
+        Thread.sleep(3000);
+    }
+
+    @And("I select size withlist")
+    public void ISelectSizeWishlist() throws InterruptedException {
+        objProfile.size8.click();
+        objProfile.saveWishlist.click();
+        Thread.sleep(3000);
+    }
+
+    @And("I select wishlist product")
+    public void ISelectWishlistProduct() {
+
+    }
+
+    @And("I click delete wishlist product")
+    public void IClickDeleteWishlistProduct() {
+
+    }
+
     @Then("I use wishlist successfully")
     public void IUseWishlistSuccessfullt() throws InterruptedException {
-<<<<<<< HEAD
-        Thread.sleep(2000);
-=======
         Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
     }
+
 
     @When("I want to use help center")
     public void IWantToUseHelpCenter() {
@@ -425,13 +415,8 @@ public class ProfileStep extends BaseStep {
     }
 
     @Then("I use help center successfully")
-<<<<<<< HEAD
-    public void IUseHelpCenterSuccessfully() {
-=======
     public void IUseHelpCenterSuccessfully() throws InterruptedException {
         Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
-
     }
 
     @When("I want to use profile settings")
@@ -523,6 +508,38 @@ public class ProfileStep extends BaseStep {
     @Then("I use change password successfully")
     public void IUseChangePasswordSuccessfully() throws InterruptedException {
     Thread.sleep(3000);
+    }
+
+    @And("I click add selling")
+    public void IClickAddSelling() throws InterruptedException {
+        objProfile.addSelling.click();
+        Thread.sleep(2000);
+        objProfile.closeSellRequest.click();
+    }
+
+    @And("I click holiday mode")
+    public void IClickHolidayMode() throws InterruptedException {
+        objProfile.holidayMode.click();
+        Thread.sleep(2000);
+        objProfile.holidayMode.click();
+    }
+
+    @And("I click in progress selling")
+    public void IClickInProgressSelling() throws InterruptedException {
+        objProfile.inProgressSell.click();
+        Thread.sleep(2000);
+    }
+
+    @And("I click history selling")
+    public void IClickHistorySelling() throws InterruptedException {
+        objProfile.historySell.click();
+        Thread.sleep(2000);
+    }
+
+    @And("I click current selling")
+    public void IClickCurrentSelling() throws InterruptedException {
+        objProfile.currentSell.click();
+        Thread.sleep(4000);
     }
 
 

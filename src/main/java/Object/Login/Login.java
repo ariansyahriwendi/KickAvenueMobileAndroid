@@ -37,4 +37,10 @@ public class Login extends AbstractObject {
     @AndroidFindBy (xpath = "//*[@contentDescription='login-facebook']")
     public AndroidElement loginFacebookButton;
 
+    @AndroidFindBy (xpath = "//*[@resource-id='com.google.android.gms:id/container']")
+    public AndroidElement selectGoogleAccount;
+
+    @AndroidFindBy (xpath = "//*[@text='CONTINUE AS ARIANSYAH']")
+    public AndroidElement selectFacebookAccount;
+
 }

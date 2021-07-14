@@ -43,7 +43,7 @@ Feature: Profile
     And I input amount cash out kick credit "200000"
     And I click continue cash out kick credit
     And I click confirm cash out
-    And I input password cash out "Passwordkickavenue"
+    And I input password cash out "kickavenue1745"
     And I click submit cash out
     And I close pop up success cash out
     Then I use cash out successfully
@@ -102,6 +102,11 @@ Feature: Profile
     When I want to use selling
     And I click profile
     And I click selling
+    And I click add selling
+    And I click holiday mode
+    And I click in progress selling
+    And I click history selling
+    And I click current selling
     Then I use selling successfully
 
   @MyVoucher
@@ -120,12 +125,24 @@ Feature: Profile
   Scenario: User Use Wishlist Feature
     Given I am user
     When I want to use wishlist
+    And I click market
+    And I click sneakers checkout
+    And I click search sneakers market
+    And I input "adidas nmd r1"
+    And I click result found sneakers checkout
+    And I select product sneakers
+    And I click wishlist product
+    And I select size withlist
+    And I click back to search
+
     And I click profile
     And I click wishlist
     And I click street wear wishlist
     And I click luxury wishlist
     And I click lifestyle wishlist
     And I click sneakers wishlist
+    And I select wishlist product
+    And I click delete wishlist product
     Then I use wishlist successfully
 
   @HelpCenter
@@ -161,9 +178,9 @@ Feature: Profile
     And I click profile
     And I click profile settings
     And I click change password
-    And I input old password "Passwordkickavenue"
-    And I input new password "Passwordkickavenue2"
-    And I input confirm new password "Passwordkickavenue2"
+    And I input old password "kickavenue1745"
+    And I input new password "kickavenue1746"
+    And I input confirm new password "kickavenue1746"
     And I click save changes
     Then I use change password successfully
 
@@ -174,8 +191,8 @@ Feature: Profile
     And I click profile
     And I click profile settings
     And I click change password
-    And I input old password "Passwordkickavenue2"
-    And I input new password "Passwordkickavenue"
-    And I input confirm new password "Passwordkickavenue"
+    And I input old password "kickavenue1746"
+    And I input new password "kickavenue1745"
+    And I input confirm new password "kickavenue1745"
     And I click save changes
     Then I use change password successfully

@@ -22,6 +22,7 @@ Feature: Register
     And I click profile
     And I click register button
     And I click register google button
+    And I select google account
     Then I register successfully
 
   @RegisterWithFacebook
@@ -31,4 +32,5 @@ Feature: Register
     And I click profile
     And I click register button
     And I click register facebook button
+    And I select facebook account
     Then I register successfully

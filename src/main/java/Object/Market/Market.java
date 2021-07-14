@@ -10,9 +10,6 @@ public class Market extends AbstractObject {
         super(driver);
     }
 
-//    @AndroidFindBy(xpath = "")
-//    public AndroidElement back;
-
     @AndroidFindBy(xpath = "//*[@content-desc='market_tab']")
     public AndroidElement marketTab;
 

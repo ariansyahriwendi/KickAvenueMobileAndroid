@@ -4,7 +4,6 @@ import TestStep.BaseStep.BaseStep;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java8.Th;
 
 public class RegisterStep extends BaseStep {
 
@@ -45,17 +44,14 @@ public class RegisterStep extends BaseStep {
     }
 
     @And("I click register submit button")
-    public void iClickRegisterSubmitButton() {
+    public void iClickRegisterSubmitButton() throws InterruptedException {
         objRegister.registerSubmitButton.click();
+        Thread.sleep(2000);
     }
 
     @Then("I register successfully")
-<<<<<<< HEAD
-    public void iRegisterSuccessfully() {
-=======
     public void iRegisterSuccessfully() throws InterruptedException {
-        Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
+        Thread.sleep(5000);
 
     }
 
@@ -63,19 +59,14 @@ public class RegisterStep extends BaseStep {
     public void iClickRegisterGoogleButton() throws InterruptedException {
         Thread.sleep(2000);
         objRegister.registerGoogleButton.click();
-<<<<<<< HEAD
         Thread.sleep(2000);
-=======
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click register facebook button")
     public void iClickRegisterFacebookButton() throws InterruptedException {
-        objRegister.registerFacebookButton.click();
-<<<<<<< HEAD
         Thread.sleep(2000);
-=======
->>>>>>> dc37aee (Initial commit)
+        objRegister.registerFacebookButton.click();
+        Thread.sleep(2000);
     }
 
 }

@@ -178,24 +178,35 @@ public class Profile extends AbstractObject {
     @AndroidFindBy(xpath = "//*[@content-desc='save-changes']")
     public AndroidElement saveChangesPassword;
 
-//    @AndroidFindBy(xpath = "")
-//    public AndroidElement
-//
-//    @AndroidFindBy(xpath = "")
-//    public AndroidElement
-//
-//    @AndroidFindBy(xpath = "")
-//    public AndroidElement
-//
-//    @AndroidFindBy(xpath = "")
-//    public AndroidElement
-//
-//    @AndroidFindBy(xpath = "")
-//    public AndroidElement
-//
-//    @AndroidFindBy(xpath = "")
-//    public AndroidElement
-//
+    @AndroidFindBy(xpath = "//*[@content-desc='right-button']")
+    public AndroidElement addSelling;
+
+    @AndroidFindBy(xpath = "//*[@content-desc='toggle-switch']")
+    public AndroidElement holidayMode;
+
+    @AndroidFindBy(xpath = "//*[@content-desc='current-tab']")
+    public AndroidElement currentSell;
+
+    @AndroidFindBy(xpath = "//*[@content-desc='in-progress-tab']")
+    public AndroidElement inProgressSell;
+
+    @AndroidFindBy(xpath = "//*[@content-desc='history-tab']")
+    public AndroidElement historySell;
+
+    @AndroidFindBy(xpath = "//*[@content-desc='close-sell-request-category']")
+    public AndroidElement closeSellRequest;
+
+    @AndroidFindBy(xpath = "//*[@content-desc='selling']")
+    public AndroidElement sellingButton;
+
+    @AndroidFindBy(xpath = "//*[@content-desc='wishlist-size-8']")
+    public AndroidElement size8;
+
+    @AndroidFindBy(xpath = "//*[@content-desc='wishlist-submit']")
+    public AndroidElement saveWishlist;
+
+    @AndroidFindBy(xpath = "//*[@content-desc='button-wishlist']")
+    public AndroidElement wishlistProductButton;
 
 
 }

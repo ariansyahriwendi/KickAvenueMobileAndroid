@@ -18,26 +18,16 @@ public class LoginStep extends BaseStep {
 
     @And("I click profile")
     public void iClickProfile() throws InterruptedException {
-<<<<<<< HEAD
+
         Thread.sleep(7000);
         objLogin.profileButton.click();
-        Thread.sleep(3000);
-    }
-
-    @And("I click login button")
-    public void iClickLoginButton() {
-        objLogin.loginButton.click();
-=======
-        Thread.sleep(6000);
-        objLogin.profileButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
     }
 
     @And("I click login button")
     public void iClickLoginButton() throws InterruptedException {
     objLogin.loginButton.click();
     Thread.sleep(2000);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I input email {string}")
@@ -52,15 +42,6 @@ public class LoginStep extends BaseStep {
     }
 
     @And("I click login submit button")
-<<<<<<< HEAD
-    public void iClickLoginSubmitButton() throws InterruptedException {
-        objLogin.loginSubmitButton.click();
-        Thread.sleep(3000);
-    }
-
-    @Then("I login successfully")
-    public void iLoginSuccessfully(){
-=======
     public void iClickLoginSubmitButton() {
         objLogin.loginSubmitButton.click();
     }
@@ -68,19 +49,10 @@ public class LoginStep extends BaseStep {
     @Then("I login successfully")
     public void iLoginSuccessfully() throws InterruptedException {
         Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
     }
 
     @And("I click logout button")
-    public void iClickLogoutButton() throws InterruptedException {
-<<<<<<< HEAD
-        objLogin.logoutButton.click();
-        Thread.sleep(3000);
-    }
-
-    @Then("I logout successfully")
-    public void iLogoutSuccessfully() {
-=======
+    public void iClickLogoutButton() {
         scrollTouch(1);
         objLogin.logoutButton.click();
     }
@@ -88,7 +60,7 @@ public class LoginStep extends BaseStep {
     @Then("I logout successfully")
     public void iLogoutSuccessfully() throws InterruptedException {
         Thread.sleep(3000);
->>>>>>> dc37aee (Initial commit)
+        objLogin.profileButton.click();
     }
 
     @Given("I am user logout")
@@ -105,10 +77,22 @@ public class LoginStep extends BaseStep {
         Thread.sleep(2000);
     }
 
+    @And("I select google account")
+    public void iSelectGoogleAccount() throws InterruptedException {
+        objLogin.selectGoogleAccount.click();
+        Thread.sleep(3000);
+    }
+
     @And("I click continue with facebook button")
     public void iClickContinueWithFacebookButton() throws InterruptedException {
         objLogin.loginFacebookButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
+    }
+
+    @And("I select facebook account")
+    public void iSelectFacebookAccount() throws InterruptedException {
+        objLogin.selectFacebookAccount.click();
+        Thread.sleep(3000);
     }
 
 }
